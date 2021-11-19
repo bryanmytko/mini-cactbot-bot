@@ -2,6 +2,8 @@
 
 Discord bot to solve mini cactbot game.
 
+Solving algorithm: https://github.com/yuryu/ff14-cactpot/blob/master/js/perfect_cactpot.js
+
 ## Environment
 
 Create a `.env` or add to your environment:
