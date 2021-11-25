@@ -1,8 +1,18 @@
 require('dotenv').config();
-const { Client } = require('discord.js');
-const logger = require('pino')({ prettyPrint: true });
+const { Client, Intents } = require('discord.js');
+const logger = require('pino')({
+  transport: {
+    target: 'pino-pretty',
+  }
+});
+const PerfectCactbot = require('./lib/perfect_cactbot');
 
-const bot = new Client();
+const bot = new Client({
+  intents: [
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES,
+  ]
+});
 
 bot.login(process.env.DISCORD_BOT_TOKEN);
 bot.on('ready', () => logger.info('Connected.'));
@@ -33,4 +43,4 @@ bot.on('message', async(message) => {
    */
 });
 
-bot.on('disconnected', () => logger.fatal('Disconnected.');
+bot.on('disconnected', () => logger.fatal('Disconnected.'));
