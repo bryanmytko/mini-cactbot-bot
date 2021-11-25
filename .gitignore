@@ -1,0 +1,9 @@
+# Node Modules
+./node_modules
+
+# Environment
+.env
+
+# Ignore vim swaps
+*.swp
+*.swp
