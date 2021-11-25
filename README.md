@@ -4,6 +4,8 @@ Discord bot to solve mini cactbot game.
 
 Solving algorithm: https://github.com/yuryu/ff14-cactpot/blob/master/js/perfect_cactpot.js
 
+![cactpot](./cactpot.png)
+
 ## Environment
 
 Create a `.env` or add to your environment:
@@ -25,6 +27,8 @@ Create a new Discord application [https://discord.com/developers/applications](h
 You can now invite your bot to your server (assuming you have permission) with this link, filling in your `client_id` and `permissions` integer.
 
 *https://discord.com/oauth2/authorize?client_id=xxxxx&scope=bot&permissions=xxxxx*
+
+Permissions: `1050624`
 
 ## Deploy and Run
 
